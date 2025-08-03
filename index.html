@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تقييم تجربتك معنا</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            padding: 50px;
+        }
+        h2 {
+            color: #333333;
+        }
+        .option {
+            display: inline-block;
+            margin: 30px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .option img {
+            width: 80px;
+            height: 80px;
+        }
+        .option p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>كيف كانت تجربتك معنا؟</h2>
+
+    <div class="option" onclick="redirect('bad')">
+        <img src="https://img.icons8.com/emoji/96/000000/pensive-face-emoji.png" alt="غير راضٍ">
+        <p>غير راضٍ ⭐</p>
+    </div>
+
+    <div class="option" onclick="redirect('average')">
+        <img src="https://img.icons8.com/emoji/96/000000/neutral-face-emoji.png" alt="خدمة متوسطة">
+        <p>خدمة متوسطة ⭐⭐⭐</p>
+    </div>
+
+    <div class="option" onclick="redirect('good')">
+        <img src="https://img.icons8.com/emoji/96/000000/smiling-face-with-smiling-eyes.png" alt="خدمة جيدة">
+        <p>خدمة جيدة ⭐⭐⭐⭐⭐</p>
+    </div>
+
+    <script>
+        function redirect(choice) {
+            if (choice === 'good') {
+                window.location.href = 'https://www.google.com/search?hl=en-MA&gl=ma&q=JUBA+ELECTRONIC+SERVICES+TRADING,+Street+260,+Doha,+Qatar&ludocid=3344394949622318542&lsig=AB86z5XD92tRUodSc6AEqZZ-7JBW#lrd=0x3e45e3cc224c5ca1:0x2e69ad7cc0d945ce,3';
+            } else {
+                window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSeB2Y-UZILD_H-PUyzZrdHrT5HGIshafFTgBHI-1RVmniLlOA/viewform';
+            }
+        }
+    </script>
+</body>
+</html>
