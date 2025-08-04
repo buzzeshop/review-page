@@ -18,7 +18,10 @@
 
         .logo img {
             width: 120px;
-            height: auto;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ccc;
         }
 
         h2 {
@@ -52,7 +55,7 @@
 
         @media (max-width: 500px) {
             .options-container {
-                flex-direction: column;
+                flex-direction: column-reverse;
                 align-items: center;
             }
 
@@ -81,9 +84,9 @@
     <h2>كيف كانت تجربتك معنا؟</h2>
 
     <div class="options-container">
-        <div class="option" onclick="redirect('bad')">
-            <img src="https://img.icons8.com/emoji/96/000000/pouting-face-emoji.png" alt="غير راضٍ">
-            <p>غير راضٍ ⭐</p>
+        <div class="option" onclick="redirect('good')">
+            <img src="https://img.icons8.com/emoji/96/000000/smiling-face-with-smiling-eyes.png" alt="خدمة جيدة">
+            <p>خدمة جيدة ⭐⭐⭐⭐⭐</p>
         </div>
 
         <div class="option" onclick="redirect('average')">
@@ -91,9 +94,9 @@
             <p>خدمة متوسطة ⭐⭐⭐</p>
         </div>
 
-        <div class="option" onclick="redirect('good')">
-            <img src="https://img.icons8.com/emoji/96/000000/smiling-face-with-smiling-eyes.png" alt="خدمة جيدة">
-            <p>خدمة جيدة ⭐⭐⭐⭐⭐</p>
+        <div class="option" onclick="redirect('bad')">
+            <img src="https://img.icons8.com/emoji/96/000000/pouting-face-emoji.png" alt="غير راضٍ">
+            <p>غير راضٍ ⭐</p>
         </div>
     </div>
 
